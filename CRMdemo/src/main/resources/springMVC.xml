@@ -27,6 +27,7 @@
 			</property>
 		</bean>
 		
+		<mvc:view-controller path="toAdd" view-name="add"></mvc:view-controller>
 		<mvc:default-servlet-handler/>
 		<mvc:annotation-driven/>
        			

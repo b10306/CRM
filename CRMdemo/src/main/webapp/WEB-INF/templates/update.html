@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html language="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>修改一名客戶</title>
+</head>
+<body>
+<form th:action="@{/customer}" method="post">
+	<input type="hidden" name="_method" value="put">
+	<input type="hidden" name="id" th:value="${customer.id}">
+	name: <input type="text" name="name" th:value="${customer.name}"><br>
+	email: <input type="text" name="email" th:value="${customer.email}"><br>
+	<input type="submit" value="update"><br>
+</form>
+
+
+</body>
+</html>
